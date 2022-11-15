@@ -1,0 +1,277 @@
+/* 
+=============== 
+common
+===============
+ */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DDEEFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgb(101, 100, 100);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+p {
+  color: rgb(101, 100, 100);
+}
+
+/*
+=============== 
+ global-style
+===============
+*/
+
+/* color: #ffde59; */
+/* transition: all 0.3s linear; */
+/* color: #7AB398; */
+
+
+/* 
+=============== 
+nav
+===============
+ */
+
+nav {
+  width: 100vw;
+  background-color: white;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+}
+
+.nav-center {
+  height: 3rem;
+  width: 90vw;
+  max-width: 620px;
+  justify-content: space-between;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-center h1 {
+  color: #7AB398;
+}
+
+
+
+/*
+=============== 
+section
+===============
+*/
+
+.section-center {
+  margin: 0 auto;
+  margin-top: 5rem;
+  width: 80vw;
+  max-width: 580px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  padding: 2rem;
+
+}
+
+.section-center:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.248);
+  transition: all 0.3s linear;
+}
+
+
+/* .btn {
+  font-size: 1.25rem;
+  color:  #ffde59;
+  background-color: #7AB398;
+  border: #7AB398 1px solid;
+  border-radius: 5px;
+  width: 5rem;
+  height: 2rem;
+  box-shadow: 0 3px 3px rgb(0 0 0 / 10%);
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  color: #ede6c7(62, 62, 114);
+  background-color: #98cab3fa;
+} */
+
+/*
+=============== 
+form
+===============
+*/
+
+
+.grocery-form {
+  margin-bottom: 1rem;
+}
+
+.alert {
+  display: grid;
+  align-items: center;
+  height: 2rem;
+  font-size: 0.875rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  color: rgb(179, 179, 179);
+  background-color: rgb(252, 229, 229);
+}
+
+.alert-success {
+  color: rgb(179, 179, 179);
+  background-color: #ffde59;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+#grocery {
+  display: block;
+  width: 100%;
+  border: transparent;
+  padding: 0 0.25rem;
+  padding-left: 1rem;
+  background-color: #f3f5f7;
+}
+
+.submit-btn {
+  letter-spacing: 2px;
+  width: 6rem;
+  background-color: #ffde59;
+  border: transparent;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5PX;
+  transition: all 0.3s linear;
+  cursor: pointer;
+
+}
+
+.submit-btn:hover {
+  color: white;
+  background-color: #98cab3fa;
+}
+
+/*
+=============== 
+grocery-container
+===============
+*/
+
+.grocery-container {
+  transition: all 0.3s linear;
+  visibility: hidden;
+}
+
+.show-container{
+  visibility: visible;
+}
+
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.grocery-item:hover {
+  background-color: #f3f5f7;
+  transition: all 0.3s linear;
+}
+
+.show-item {
+  visibility: visible;
+}
+
+.edit-btn {
+  color: lightgreen;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  color: #7AB398;
+}
+
+.delete-btn {
+  color: red;
+  border: transparent;
+  background-color: transparent;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: rgb(200, 19, 19);
+}
+
+.clear-btn {
+  text-transform: capitalize;
+  display: grid;
+  color: red;
+  letter-spacing: 3px;
+  border: transparent;
+  background-color: transparent;
+  margin: 0 auto;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.clear-btn:hover {
+  color: rgb(200, 19, 19);
+}
+
+
+/*
+=============== 
+PC screen
+===============
+*/
+
+@media screen and (min-width: 920px) {
+
+  body {
+    font-size: 1rem;
+  }
+
+}
